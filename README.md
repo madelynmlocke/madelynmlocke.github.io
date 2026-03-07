@@ -1,1 +1,0 @@
-# madelynmlocke.github.io
