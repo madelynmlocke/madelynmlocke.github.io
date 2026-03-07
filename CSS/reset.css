@@ -9,7 +9,7 @@ html {
 }
 
 *, *:before, *:after {
-  box-sizing: inherit;
+	box-sizing: inherit;
 }
 
 html, body {
@@ -109,6 +109,7 @@ img {
 	width: 100%;
 	height: auto;
 }
+
 
 svg:not(:root) {
 	overflow: hidden;

@@ -1,5 +1,44 @@
 /*--------------------------------------------------------------
-Main Navigation
+Header style
+--------------------------------------------------------------*/
+
+.masthead {
+    background: rgba(255, 0, 212, 0.21);
+
+}
+
+@media screen and (min-width: 50em) {
+    .masthead {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.site-title {
+    margin: 0;
+    padding:.2em .5em;
+    font-size: 2em;
+    font-weight: 300;
+    color: black;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6,
+	0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+@keyframes glow {
+	from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+	}
+	to {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0073e6, 0 0 40px #0073e6, 0 0 50px #0073e6, 0 0 60px #0073e6, 0 0 70px #0073e6;
+	}
+}
+
+.site-title a {
+    text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+Main Navigation Menu
 --------------------------------------------------------------*/
 
 .main-navigation {
@@ -25,11 +64,16 @@ Main Navigation
 
 .main-navigation a {
 	position: relative;
-	display: block;
+	display: inline-block;
 	padding: 0.8em 1em;
 	text-decoration: none;
 	line-height: 1.6em;
 	color: hotpink;
+}
+
+.main-navigation a:hover {
+	transform: translateX(3px);
+    transition: color 0.2s ease, transform 0.2s ease;
 }
 
 .main-navigation a:hover,

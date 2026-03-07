@@ -1,4 +1,103 @@
-/* SLOGAN ANIMATION */
+/*--------------------------------------------------------------
+Index Page Pre-Loader Styling
+--------------------------------------------------------------*/
+
+.no-js #loader { display: none;  }
+
+.js #loader {
+	display: block;
+	position: absolute;
+	left: 100px;
+	top: 0;
+}
+
+.pre-load {
+  text-align: center;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background-color: black;
+}
+
+.load-wrap {
+  display: inline-block;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.load-word {
+  text-align: center;
+  color: white;
+  font-family: "gameplayed";
+  position: relative;
+  font-size: 24px;
+  padding-bottom: 10px;
+}
+
+.dots:after {
+  content: '.';
+  animation: dots 3s steps(5, end) infinite;}
+
+@keyframes dots {
+  0%, 20% {
+    color: rgba(0,0,0,0);
+    text-shadow:
+      .25em 0 0 rgba(0,0,0,0),
+      .5em 0 0 rgba(0,0,0,0);}
+  40% {
+    color: white;
+    text-shadow:
+      .25em 0 0 rgba(0,0,0,0),
+      .5em 0 0 rgba(0,0,0,0);}
+  60% {
+    text-shadow:
+      .25em 0 0 white,
+      .5em 0 0 rgba(0,0,0,0);}
+  80%, 100% {
+    text-shadow:
+      .25em 0 0 white,
+      .5em 0 0 white;}}
+
+#load-bar {
+    width:200px;
+    height:25px;
+    border:solid 3px  white;
+    padding: 5px;
+    }
+
+/* Animated Bar */
+#load-bar > div {
+    height:100%;
+    background-color: white;
+    animation-name: loading;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    }
+/* Animation */
+  @keyframes loading {
+    from { width: 0; background-color: white; }
+    /* 50% { background-color: white;} */
+    to   { width: 100%; background-color: white; }
+    }
+
+/*--------------------------------------------------------------
+TEXT BOUNCE EFFECT
+--------------------------------------------------------------*/
+
+.cd-intro-content {
+  position: relative;
+  padding: 90px 10%;
+}
+
+@media (max-width: 640px) {
+    .cd-intro-content {
+        margin: 10px 6%;
+    }
+}
 
 .cd-intro-content h1,
 .cd-intro-content p,
@@ -9,6 +108,10 @@
 }
 
 .bouncy.cd-intro-content h1 {
+  animation-name: cd-bounce-right;
+}
+
+.bouncy.cd-intro-content h2 {
   animation-name: cd-bounce-right;
 }
 
@@ -125,24 +228,20 @@
   filter: alpha(opacity=$IEValue);
 }
 
-$offset: 6px;
-$bgcolor: #111;
-
-
-  &:after{
-    top: 0;
-    left: $offset;
-    color: blue;
-    @include animation('move 1.5s infinite');
-  }
-  &:before{
-    top: -0.4*$offset;
-    left: 0.6*$offset;
-    color: limegreen;
-  }
+.some-class::after {
+  top: 0;
+  left: 6px;
+  color: blue;
+  animation: move 1.5s infinite;
 }
 
-.line{
+.some-class::before {
+  top: -2.4px;
+  left: 3.6px;
+  color: limegreen;
+}
+
+.line {
   position: absolute;
   left: 0;
   right: 0;
@@ -150,49 +249,52 @@ $bgcolor: #111;
   height: 1px;
   background: blue;
   mix-blend-mode: screen;
-  -webkit-filter: blur(1px);
-  -moz-filter: blur(1px);
   filter: blur(1px);
-  &:after, &:before{
-    content: '';
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    mix-blend-mode: screen;
-  }
-  &:after{
-    top: 2px;
-    background: red;
-  }
-  &:before{
-    top: -2px;
-    background: limegreen;
-  }
 }
 
+.line::after,
+.line::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  mix-blend-mode: screen;
+}
 
+.line::after {
+  top: 2px;
+  background: red;
+}
 
-@include keyframes(skew){
-  0%    { @include transform(none) }
-  30%   { @include transform(none) }
-  30.2% { @include transform(skewX(50deg)) }
-  30.4% { @include transform(skewX(-50deg)) }
-  31%   { @include transform(none) }
+.line::before {
+  top: -2px;
+  background: limegreen;
 }
-@include keyframes(move){
-  0%   { @include transform(none); }
-  30%  { @include transform(none); }
-  31%  { @include transform(translateX(-$offset)) }
-  33%  { @include transform(none); }
-  98%  { @include transform(none); }
-  100% { @include transform(translateX($offset)) }
+
+@keyframes skew {
+  0% { transform: none; }
+  30% { transform: none; }
+  30.2% { transform: skewX(50deg); }
+  30.4% { transform: skewX(-50deg); }
+  31% { transform: none; }
 }
-@include keyframes(flash){
-  0%   { @include opacity(1) }
-  50%  { @include opacity(0.5) }
+
+@keyframes move {
+  0% { transform: none; }
+  30% { transform: none; }
+  31% { transform: translateX(-6px); }
+  33% { transform: none; }
+  98% { transform: none; }
+  100% { transform: translateX(6px); }
 }
-@include keyframes(lines){
-  0%   { @include opacity(0.1) }
-  50%  { @include opacity(1) }
+
+@keyframes flash {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+@keyframes lines {
+  0% { opacity: 0.1; }
+  50% { opacity: 1; }
 }

@@ -10,50 +10,6 @@
 
     <!-- Stylesheets, inlcuding custom fonts, go here -->
     <link rel="stylesheet" href="style.css" type="text/css" media="all">
-
-    <style>
-      .spacer {
-        margin-bottom: 50px;
-      }
-
-      input, textarea {
-        background-color: transparent;
-        border: none;
-      }
-
-      form {
-        display: grid;
-        grid-template-columns: repeat(auto-fix, minmax(10rem, 1fr));
-      }
-
-      .formO {
-        border: 35px solid hotpink;
-        width: 1000px;
-        max-width: 90%;
-          margin: 0 auto;
-      }
-
-      .formB {
-        margin: 0 auto;
-        height: 250px;
-        width: 1000px;
-        max-width: 90%;
-        background-color: hotpink;
-        grid-template-columns: 1fr 1fr;
-        grid-template-columns: repeat(auto-fix, minmax(500px, 1fr));
-      }
-
-      .form {
-        display: grid;
-        border: 20px solid white;
-        background: linear-gradient(rgba(10,10,10,.6),rgba(0,0,0,.7)),
-        repeating-linear-gradient(0, transparent, transparent 2px, grey 3px, grey 3px);
-        background-color: #303030;
-        padding: 10px;
-        grid-template-columns: 1fr 1fr;
-        grid-template-columns: repeat(auto-fix, minmax(500px, 1fr));
-      }
-    </style>
 </head>
 
 <body>
@@ -72,8 +28,7 @@
           <div class="menu-main-menu-container">
             <ul id="primary-menu" class="nav-menu">
               <li class="menu-item "><a href="index.html">Home</a></li>
-              <li class="menu-item"><a href="about.html">About</a></li>
-              <li class="menu-item"><a href="designs.html">Designs</a>
+              <li class="menu-item"><a href="projects.html">Projects</a>
                 </li>
                 <li class="menu-item current-menu-item"><a href="contact.html">Contact</a></li>
               </ul>
@@ -85,54 +40,96 @@
   <main>
     <section class="cd-intro">
        <div class="cd-intro-content bouncy">
-          <h1 class="slogan lightning-effect">Seeking Web Development Opportunities -</h1>
+          <h1 class="slogan lightning-effect">Fullstack Developer seeking web dev opportunites</h1>
           <p>Madelyn Leahu - Front End Web Developer | Web Applications Developer</p>
           <div class="action-wrapper">
-             <a href="#0" class="cd-btn main-action plus">Designs</a>
+             <a href="#0" class="cd-btn main-action plus">Projects</a>
+             <a href="https://github.com/madelynmlocke" class="cd-btn main-action plus">Github</a>
              <a href="#0" class="cd-btn plus">Contact</a>
           </div>
        </div>
     </section>
-
-<div class="spacer"></div>
-
-      <div class="formO">
-      <div class="form">
-        <div class="form-1" style="margin: 20px;">
-          <h3 class="lightning-effect">Contact Form</h3>
-        <form action="/action_page.php">
-          <label for="name" class="lightning-effect">Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-          <label for="email" class="lightning-effect">Email</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your email address..">
-
-          <label for="subject" class="lightning-effect">Subject</label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px;"></textarea>
-          <input type="submit" value="Submit" style="margin-top: 1px;">
-        </div>
-
-        <div class="form-2 footer-area">
-            <h3 class="lightning-effect">+Contact Information</h3>
-            <p>+Phone: 555-555-5555</p>
-            <p>+Email: email@email.com</p>
-            <p>+Located in King County</p>
-        </div>
-        </form>
-        </div>
-      </div>
-
-      <div class="formB">
-        <div class="formB-1" style="display: grid; grid-template-columns: 1fr 1fr;
-                grid-template-columns: repeat(auto-fix, minmax(500px, 1fr));">
-          <img src="IMG\dpad1.svg" alt="dpad" style="width: 150px; margin: 0 auto; padding-top: 20px;">
-          <img src="IMG\buttons.png" alt="dpad" style="width: 200px; opacity: 80%; margin: 0 auto;">
-        </div>
-      </div>
   </main>
 
     <!-- Scripts for accessible mobile-first navigation -->
     <script   src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script>
     <script type="text/javascript" src="JS/navigation.js"></script>
+
+<section class="contact-section" id="contact">
+  <div class="contact-shell">
+    <div class="contact-bezel">
+      <div class="contact-screen">
+        <div class="contact-header">
+          <p class="contact-tag">Transmission</p>
+          <h2>Contact Me</h2>
+          <p class="contact-subtext">
+            Want to connect, collaborate, or talk about an opportunity?
+          </p>
+        </div>
+
+        <form class="contact-form">
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name">
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email">
+          </div>
+
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message..."></textarea>
+          </div>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+      <div class="form-dpad">
+        <div class="form-dpad-1" style="display: grid; grid-template-columns: 1fr 1fr;
+                grid-template-columns: repeat(auto-fix, minmax(500px, 1fr));">
+          <img src="IMG\dpad1.svg" alt="dpad"  style="margin: 0 auto; padding-top: 20px; width: 100%; height: auto; max-width: 150px;">
+          <img src="IMG\buttons.png" alt="dpad" style="opacity: 80%; margin: 0 auto; width: 100%; height: auto; max-width: 200px;">
+        </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+
+  <div class="footer-grid">
+
+    <div class="footer-brand">
+      <h3>Madelyn Locke</h3>
+      <p>Frontend Developer</p>
+      <p class="footer-tagline">
+        Building interactive web experiences with modern technologies.
+      </p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Connect</h4>
+
+      <a href="mailto:madelynmlocke@gmail.com">
+        Email
+      </a>
+
+      <a href="https://www.linkedin.com/in/madelyn-locke/" target="_blank">
+        LinkedIn
+      </a>
+
+      <a href="https://github.com/madelynmlocke" target="_blank">
+        GitHub
+      </a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Madelyn Locke</p>
+  </div>
+
+</footer>
 </body>
 </html>
