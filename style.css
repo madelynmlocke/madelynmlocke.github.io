@@ -8,3 +8,4 @@ Style Import - This sheet pulls in all the components in order of appearance
 @import url('CSS/navigation.css');
 @import url('CSS/animation.css');
 @import url('CSS/body.css');
+@import url('CSS/equalizer.css');

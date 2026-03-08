@@ -90,7 +90,11 @@ TEXT BOUNCE EFFECT
 
 .cd-intro-content {
   position: relative;
-  padding: 90px 10%;
+  margin: 100px 10%;
+  padding: 60px 10% 60px;
+  align-items: flex-start;
+  /* background-color: rgba(10, 10, 32, 0.801); */
+  /* border-radius: 20px; */
 }
 
 @media (max-width: 640px) {

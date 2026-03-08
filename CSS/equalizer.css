@@ -1,0 +1,125 @@
+.audio-visualizer-section {
+  margin: 0 11%;
+  background: transparent;
+  box-shadow: none;
+  color: white;
+}
+
+.audio-header,
+.audio-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.audio-header {
+  margin-bottom: 22px;
+}
+
+.audio-kicker {
+  margin: 0 0 8px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.audio-header h2 {
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+}
+
+.audio-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#play-stop-btn,
+#skip-btn {
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+  padding: 10px 14px;
+  min-width: 72px;
+  border-radius: 14px;
+  cursor: pointer;
+  font: inherit;
+  font-size: 14px;
+  transition: background 0.2s ease, transform 0.2s ease, opacity 0.2s ease;
+}
+
+#play-stop-btn:hover,
+#skip-btn:hover {
+  background: rgba(255, 255, 255, 0.14);
+  transform: translateY(-1px);
+}
+
+#play-stop-btn:disabled,
+#skip-btn:disabled {
+  opacity: 0.6;
+  cursor: default;
+  transform: none;
+}
+
+.equalizer {
+  height: 200px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 4px;
+  padding: 10px 6px;
+  border-radius: 0;
+  background: transparent;
+  overflow: hidden;
+}
+
+.eq-bar {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 3px;
+}
+
+.eq-segment {
+  flex: 1;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.06);
+  opacity: 0.35;
+  transform: scaleY(0.95);
+  transition:
+    background 0.08s linear,
+    opacity 0.08s linear,
+    transform 0.08s linear,
+    box-shadow 0.08s linear;
+}
+
+.audio-footer {
+  margin-top: 18px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.58);
+}
+
+.audio-footer span {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+@media (max-width: 700px) {
+  .audio-visualizer-section {
+    padding: 20px;
+  }
+
+  .equalizer {
+    height: 160px;
+    gap: 3px;
+    padding: 14px 6px;
+  }
+
+  .audio-header h2 {
+    font-size: 2rem;
+  }
+}
