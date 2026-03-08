@@ -88,11 +88,24 @@ Index Page Pre-Loader Styling
 TEXT BOUNCE EFFECT
 --------------------------------------------------------------*/
 
+.cd-intro-text{
+  flex: 1;
+  text-align: left;
+}
+
 .cd-intro-content {
   position: relative;
   margin: 100px 10%;
   padding: 60px 10% 60px;
-  align-items: flex-start;
+  /* align-items: flex-start;
+  display: flex;
+  flex-direction: column; */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
   /* background-color: rgba(10, 10, 32, 0.801); */
   /* border-radius: 20px; */
 }
@@ -102,6 +115,30 @@ TEXT BOUNCE EFFECT
         margin: 10px 6%;
     }
 }
+
+@media (max-width: 768px) {
+
+  .cd-intro-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .cd-sprite {
+    margin: 0;
+  }
+
+}
+
+.cd-sprite {
+  width: 114px;
+  height: 114px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  flex-shrink: 0;
+}
+
 
 .cd-intro-content h1,
 .cd-intro-content p,
