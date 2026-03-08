@@ -127,7 +127,7 @@ About Section
 }
 
 .about-panel {
-  background: rgba(11, 16, 38, 0.8);
+  background: rgba(10, 16, 42, 0.82);
   border: 1px solid rgba(0, 255, 255, 0.15);
   border-radius: 22px;
   padding: 28px;
@@ -372,8 +372,9 @@ Footer Section
   position: relative;
   padding: 70px 10% 40px;
   margin: 0 10%;
-  background: rgba(10, 16, 42, 0.9);
+  background: rgba(10, 16, 42, 0.82);
   border-radius: 30px;
+  backdrop-filter: blur(8px);
   color: #e9e3ff;
   border-top: 1px solid rgba(255, 0, 153, 0.25);
   overflow: hidden;

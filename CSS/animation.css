@@ -137,6 +137,8 @@ TEXT BOUNCE EFFECT
   display: block;
   margin: 0 auto;
   flex-shrink: 0;
+  image-rendering: pixelated;
+  filter: drop-shadow(0px 6px 4px rgba(0,0,0,0.5));
 }
 
 
