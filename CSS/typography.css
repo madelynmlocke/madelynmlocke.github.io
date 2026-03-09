@@ -10,7 +10,7 @@ Typography
 @font-face { font-family: "gameplayed"; src: url('FONTS/gameplayed-vyl7-webfont.woff') format("woff"); }
 
 body, button, input, select, textarea {
-	color: #00fff385;
+	color: #00fff285;
 	font-family: "gameplayed", sans-serif;
 	font-size: 18px;
 	line-height: 1.5;

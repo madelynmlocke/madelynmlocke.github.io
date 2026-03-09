@@ -370,7 +370,7 @@ Footer Section
 
 .site-footer {
   position: relative;
-  padding: 70px 10% 40px;
+  padding: 40px 5% 10px;
   margin: 0 10%;
   background: rgba(10, 16, 42, 0.82);
   border-radius: 30px;
@@ -438,6 +438,11 @@ Footer Section
   gap: 40px;
 }
 
+.footer-logo-img {
+  height: 200px;
+  width: 200px;
+}
+
 .footer-brand h3 {
   font-size: 1.6rem;
   margin-bottom: 8px;
@@ -454,12 +459,17 @@ Footer Section
 
 .footer-tagline {
   margin-top: 10px;
-  max-width: 320px;
+  max-width: 260px;
   font-size: 0.9rem;
   line-height: 1.6;
 }
 
+.footer-links {
+  min-width: 260px;
+}
+
 .footer-links h4 {
+  margin-top: 25px;
   margin-bottom: 12px;
   color: #7df9ff;
   letter-spacing: 0.05em;
