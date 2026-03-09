@@ -782,7 +782,7 @@ Projects Section
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 28px;
   align-items: stretch;
 }
@@ -805,7 +805,7 @@ Projects Section
 .project-image-wrapper {
   position: relative;
   overflow: hidden;
-  height: 220px;
+  height: 180px;
   background: #0b1120;
 }
 
@@ -859,6 +859,7 @@ Projects Section
 .project-content p {
   color: #cbd5e1;
   line-height: 1.7;
+  font-size: 0.8em;
   margin-bottom: 22px;
 }
 

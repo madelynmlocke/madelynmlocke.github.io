@@ -175,6 +175,24 @@ TEXT BOUNCE EFFECT
   animation-delay: 0.4s;
 }
 
+.reveal-right,
+.reveal-left,
+.reveal-rotate {
+  opacity: 0;
+}
+
+.reveal-right.in-view {
+  animation: cd-bounce-right 0.6s forwards;
+}
+
+.reveal-left.in-view {
+  animation: cd-bounce-left 0.6s forwards;
+}
+
+.reveal-rotate.in-view {
+  animation: cd-bounce-rotate 0.5s forwards;
+}
+
 @keyframes cd-bounce-right {
   0% {
     opacity: .2;
