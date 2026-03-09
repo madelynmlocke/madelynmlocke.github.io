@@ -95,8 +95,8 @@ TEXT BOUNCE EFFECT
 
 .cd-intro-content {
   position: relative;
-  margin: 100px 10%;
-  padding: 60px 10% 60px;
+  margin: 80px 10%;
+  /* padding: 30px 10%; */
   /* align-items: flex-start;
   display: flex;
   flex-direction: column; */

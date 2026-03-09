@@ -1,0 +1,205 @@
+.bard {
+  margin: 20px auto 20px;
+  width: 65em;
+  height: 65em;
+  font-size: 2px;
+  position: relative;
+  transform: scale(0.5);
+  filter: drop-shadow(0px 6px 8px rgba(0,0,0,0.4));
+}
+
+  @media (min-width: 360px) {
+    .bard {
+        font-size: 3px;
+    }
+  }
+
+  @media (min-width: 600px) {
+    .bard{
+        font-size: 4px;
+    }
+  }
+
+  @media (min-width: 1000px) {
+    .bard {
+        font-size: 5px;
+    }
+  }
+
+.bard img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.strip {
+  overflow: hidden;
+  position: relative;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+  background-size: 100% auto;
+  background-image: url("../IMG/cropsprite.png");
+  background-repeat: no-repeat;
+}
+
+@keyframes glitch-5 {
+  0.00%,
+  33.33%,
+  43.33%,
+  66.67%,
+  76.67%,
+  100.00% {
+    transform: none;
+    filter: hue-rotate(0) drop-shadow(0 0 0 transparent);
+  }
+
+  33.43%,
+  43.23% {
+    transform: translateX(var(--glitch-x-1));
+    filter: hue-rotate(var(--glitch-hue-1))
+      drop-shadow(0px -4px 0 rgb(0 0 255 / 0.1));
+  }
+
+  66.77%,
+  76.57% {
+    transform: translateX(var(--glitch-x-2));
+    filter: hue-rotate(var(--glitch-hue-2))
+      drop-shadow(-1px 0px 0 rgb(255 0 0 / 0.1));
+  }
+}
+
+@keyframes glitch-6 {
+  0.00%,
+  33.33%,
+  41.67%,
+  66.67%,
+  75.00%,
+  100.00% {
+    transform: none;
+    filter: hue-rotate(0) drop-shadow(0 0 0 transparent);
+  }
+
+  33.43%,
+  41.57% {
+    transform: translateX(var(--glitch-x-1));
+    filter: hue-rotate(var(--glitch-hue-1))
+      drop-shadow(-2px 3px 0 rgb(255 0 0 / 0.1));
+  }
+
+  66.77%,
+  74.90% {
+    transform: translateX(var(--glitch-x-2));
+    filter: hue-rotate(var(--glitch-hue-2))
+      drop-shadow(-3px -2px 0 rgb(0 0 255 / 0.1));
+  }
+}
+
+@keyframes glitch-7 {
+  0.00%,
+  33.33%,
+  40.48%,
+  66.67%,
+  73.81%,
+  100.00% {
+    transform: none;
+    filter: hue-rotate(0) drop-shadow(0 0 0 transparent);
+  }
+
+  33.43%,
+  40.38% {
+    transform: translateX(var(--glitch-x-1));
+    filter: hue-rotate(var(--glitch-hue-1))
+      drop-shadow(0px -3px 0 rgb(0 0 255 / 0.1));
+  }
+
+  66.77%,
+  73.71% {
+    transform: translateX(var(--glitch-x-2));
+    filter: hue-rotate(var(--glitch-hue-2))
+      drop-shadow(4px 1px 0 rgb(255 0 0 / 0.1));
+  }
+}
+
+@keyframes glitch-8 {
+  0.00%,
+  33.33%,
+  39.58%,
+  66.67%,
+  72.92%,
+  100.00% {
+    transform: none;
+    filter: hue-rotate(0) drop-shadow(0 0 0 transparent);
+  }
+
+  33.43%,
+  39.48% {
+    transform: translateX(var(--glitch-x-1));
+    filter: hue-rotate(var(--glitch-hue-1))
+      drop-shadow(-1px -1px 0 rgb(0 0 255 / 0.1));
+  }
+
+  66.77%,
+  72.82% {
+    transform: translateX(var(--glitch-x-2));
+    filter: hue-rotate(var(--glitch-hue-2))
+      drop-shadow(3px -1px 0 rgb(0 0 255 / 0.1));
+  }
+}
+
+@keyframes glitch-9 {
+  0.00%,
+  33.33%,
+  38.89%,
+  66.67%,
+  72.22%,
+  100.00% {
+    transform: none;
+    filter: hue-rotate(0) drop-shadow(0 0 0 transparent);
+  }
+
+  33.43%,
+  38.79% {
+    transform: translateX(var(--glitch-x-1));
+    filter: hue-rotate(var(--glitch-hue-1))
+      drop-shadow(1px -3px 0 rgb(255 0 0 / 0.1));
+  }
+
+  66.77%,
+  72.12% {
+    transform: translateX(var(--glitch-x-2));
+    filter: hue-rotate(var(--glitch-hue-2))
+      drop-shadow(1px 1px 0 rgb(255 0 0 / 0.1));
+  }
+}
+
+@keyframes glitch-10 {
+  0.00%,
+  33.33%,
+  38.33%,
+  66.67%,
+  71.67%,
+  100.00% {
+    transform: none;
+    filter: hue-rotate(0) drop-shadow(0 0 0 transparent);
+  }
+
+  33.43%,
+  38.23% {
+    transform: translateX(var(--glitch-x-1));
+    filter: hue-rotate(var(--glitch-hue-1))
+      drop-shadow(3px -1px 0 rgb(255 0 0 / 0.1));
+  }
+
+  66.77%,
+  71.57% {
+    transform: translateX(var(--glitch-x-2));
+    filter: hue-rotate(var(--glitch-hue-2))
+      drop-shadow(-3px 2px 0 rgb(255 0 0 / 0.1));
+  }
+}
