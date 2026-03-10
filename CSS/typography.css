@@ -6,8 +6,8 @@ Typography
 @font-face { font-family: "Streamster"; src: url('FONTS/streamster-webfont.woff') format("woff"); }
 @font-face { font-family: "SFAlienEncounters"; src: url('FONTS/sfalienencounters-webfont.woff') format("woff"); }
 @font-face { font-family: "SFAlienEncounters-Italic"; src: url('FONTS/sfalienencounters-italic-webfont.woff') format("woff"); }
-@font-face { font-family: "Lazer84"; src: url('FONTS/Lazer84.woff') format("woff"); }
 @font-face { font-family: "gameplayed"; src: url('FONTS/gameplayed-vyl7-webfont.woff') format("woff"); }
+@font-face { font-family: "lazer84"; src: url('FONTS/Lazer84.woff') format("woff") ; }
 
 body, button, input, select, textarea {
 	color: #00fff285;
