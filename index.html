@@ -7,13 +7,12 @@
     <title>Madelyn Locke - Web Portfolio</title>
     <meta name="description" content="Web Portfolio for Madelyn Locke"/>
     <link rel="icon" href="IMG/gameboy.png" type="image/png">
-    <!-- Stylesheets, inlcuding custom fonts, go here -->
     <link rel="stylesheet" href="style.css" type="text/css" media="all">
 </head>
 
 <body>
   <!-- <div class="pre-load">
-	  <div class="load-wrap">
+    <div class="load-wrap">
       <div class="load-word">Loading<span class="dots"></span></div>
       <div id="load-bar"><div></div></div>
     </div>
@@ -27,32 +26,29 @@
   <div class="site-branding">
     <h1 class="site-title"><a href="index.html"><span class="name">M.L.</span>
     <span class="name2">Portfolio</span></a></h1>
-  </div><!-- .site-title -->
+  </div>
+  <nav id="site-navigation" class="main-navigation" role="navigation" aria-label="Primary navigation">
+    <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">Menu</button>
+    <div class="menu-main-menu-container">
+      <ul id="primary-menu" class="nav-menu">
+        <li class="menu-item current-menu-item"><a href="index.html">Home</a></li>
+        <li class="menu-item"><a href="projects.html">Projects</a></li>
+        <li class="menu-item"><a href="assets/locke-resume.pdf" download>Resume</a></li>
+        <li class="menu-item"><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-    <nav id="site-navigation" class="main-navigation" role="navigation">
-    <!-- Mobile menu toggle button -->
-      <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">Menu</button>
-          <!-- Main Menu -->
-      <div class="menu-main-menu-container">
-        <ul id="primary-menu" class="nav-menu">
-          <li class="menu-item current-menu-item"><a href="index.html">Home</a></li>
-          <li class="menu-item"><a href="projects.html">Projects</a></li>
-          <li class="menu-item"><a href="assets/locke-resume.docx" download>Resume</a>
-          <li class="menu-item"><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-  </header><!-- .masthead -->
-
-<div class="content">
+<div id="content" class="content">
 
 <section class="cd-intro">
   <div class="cd-intro-content bouncy">
     <div class="cd-intro-text">
-      <h1 class="slogan lightning-effect">Fullstack Developer building responsive and scalable web applications</h1>
-      <p>Madelyn Locke // HTML5 • CSS3 • JavaScript • C# • SQL</p>
+      <h1 class="slogan lightning-effect">Full-stack Developer focused on responsive and scalable web applications</h1>
+      <p>Madelyn Locke // Javascript • ASP.NET • C# • SQL</p>
       <div class="action-wrapper">
-        <a href="assets/locke-resume.docx" class="cd-btn main-action plus">Resume</a>
+        <a href="assets/locke-resume.pdf" class="cd-btn main-action plus">Resume</a>
         <a href="https://github.com/madelynmlocke" class="cd-btn main-action plus">Github</a>
         <a href="https://www.linkedin.com/in/madelyn-locke/" class="cd-btn plus">LinkedIn</a>
       </div>
@@ -72,17 +68,17 @@
   <div class="about-grid reveal-right">
     <div class="about-panel about-info-panel">
       <h3>Madelyn Locke</h3>
-      <p class="about-role">Fullstack Developer</p>
+      <p class="about-role">Full-stack Developer</p>
 
       <div class="about-stats">
         <div class="about-stat">
           <span class="stat-label">Focus</span>
-          <span class="stat-value">Web App and React App Development</span>
+          <span class="stat-value">Web Applications & UI</span>
         </div>
 
         <div class="about-stat">
           <span class="stat-label">Experience</span>
-          <span class="stat-value">Web Apps, Team Projects</span>
+          <span class="stat-value">Web Apps, Web Design, Agile Team Projects</span>
         </div>
 
         <div class="about-stat">
@@ -90,28 +86,37 @@
           <span class="stat-value">JavaScript, C#, SQL</span>
         </div>
 
+        <div class="about-stat">
+          <span class="stat-label">Education</span>
+          <span class="stat-value">A.S. Computer Science — Cascadia College</span>
+        </div>
+
       </div>
     </div>
 
     <div class="about-panel about-text-panel">
         <p>
-          I’m a developer with experience in web development, programming, and
-          collaborative software projects. I enjoy building clean interfaces,
-          organizing information clearly, and creating applications that feel polished
-          and intuitive to use.
+          I'm a full-stack developer focused on building responsive web applications and polished user interfaces.
+          My experience includes JavaScript, C#, SQL, and ASP.NET Core MVC. I’ve worked on both solo and team-based projects, 
+          building applications with authentication, database integration, and modern frontend design. I’m particularly interested 
+          in frontend-focused roles where I can combine engineering with visual design.
         </p>
 
         <p>
-          My background includes HTML, CSS, JavaScript, C#, SQL, and ASP.NET Core MVC,
-          with experience working on team-based projects and full-stack applications.
-          I’m especially interested in frontend development roles where I can keep
-          improving my technical skills while contributing to thoughtful, user-focused
-          products.
+            My experience includes HTML, CSS, JavaScript, C#, SQL, and ASP.NET Core MVC.
+            I’ve worked on both individual and team-based projects,
+            building full-stack web applications with database integration,
+            authentication, and responsive UI design.
+
+            I’m particularly interested in full-stack roles where I can continue
+            building scalable web applications while improving my engineering skills and
+            contributing to well-designed, user-focused software.
         </p>
 
         <p>
-          I’m also drawn to strong visual design, which is why I like building projects
-          that combine technical structure with personality and presentation.
+          I’m also interested in visual design, which is why I enjoy building projects
+          that combine solid technical structure with polished UI and distinctive style. 
+          I like building software that not only works well, but also feels engaging to use.
         </p>
     </div>
   </div>
@@ -178,15 +183,15 @@
     </div>
 
     <div class="footer-logo">
-      <img src="IMG/logo.png" alt="portfolio logo" class="footer-logo-img">
+      <img src="IMG/logo.png" alt="portfolio logo" class="footer-logo-img" loading="lazy">
     </div>
 
     <div class="footer-links">
       <h4>Connect</h4>
       <a href="mailto:madelynmlocke@gmail.com">Email</a>
-      <a href="https://www.linkedin.com/in/madelyn-locke/" target="_blank">LinkedIn</a>
-      <a href="https://github.com/madelynmlocke" target="_blank">GitHub</a>
-      <a href="assets/locke-resume.docx" download>Resume</a>
+      <a href="https://www.linkedin.com/in/madelyn-locke/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://github.com/madelynmlocke" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="assets/locke-resume.pdf" download>Resume</a>
     </div>
   </div>
 
@@ -194,17 +199,16 @@
     <p>© 2026 Madelyn Locke</p>
   </div>
 </footer>
+
 </div>
 
-<div class="cursor-glow"></div>
+  <div class="cursor-glow"></div>
 
-    <!-- Scripts for accessible mobile-first navigation -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
-    <script type="text/javascript" src="JS/pageload.js"></script>
-    <script type="text/javascript" src="JS/navigation.js"></script>
-    <script src="JS/equalizer.js"></script>
-    <script type="text/javascript" src="JS/glitch.js"></script>
-    <script type="text/javascript" src="JS/animation.js"></script>
+  <script type="text/javascript" src="JS/pageload.js" defer></script>
+  <script type="text/javascript" src="JS/navigation.js" defer></script>
+  <script type="text/javascript" src="JS/equalizer.js" defer></script>
+  <script type="text/javascript" src="JS/glitch.js" defer></script>
+  <script type="text/javascript" src="JS/animation.js" defer></script>
+
 </body>
 </html>
