@@ -88,12 +88,12 @@ Index Page Pre-Loader Styling
 TEXT BOUNCE EFFECT
 --------------------------------------------------------------*/
 
-.cd-intro-text{
+.hero-intro-text{
   flex: 1;
   text-align: left;
 }
 
-.cd-intro-content {
+.hero-intro-content {
   position: relative;
   margin: 80px 10%;
   /* padding: 30px 10%; */
@@ -111,26 +111,26 @@ TEXT BOUNCE EFFECT
 }
 
 @media (max-width: 640px) {
-    .cd-intro-content {
+    .hero-intro-content {
         margin: 10px 6%;
     }
 }
 
 @media (max-width: 768px) {
 
-  .cd-intro-content {
+  .hero-intro-content {
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
   }
 
-  .cd-sprite {
+  .hero-sprite {
     margin: 0;
   }
 
 }
 
-.cd-sprite {
+.hero-sprite {
   width: 180px;
   height: 180px;
   text-align: center;
@@ -141,37 +141,37 @@ TEXT BOUNCE EFFECT
 }
 
 
-.cd-intro-content h1,
-.cd-intro-content p,
-.cd-intro-content .cd-btn {
+.hero-intro-content h1,
+.hero-intro-content p,
+.hero-intro-content .hero-btn {
   opacity: 0;
   animation-delay: 0.3s;
   animation-fill-mode: forwards;
 }
 
-.bouncy.cd-intro-content h1 {
-  animation-name: cd-bounce-right;
+.bouncy.hero-intro-content h1 {
+  animation-name: hero-bounce-right;
 }
 
-.bouncy.cd-intro-content h2 {
-  animation-name: cd-bounce-right;
+.bouncy.hero-intro-content h2 {
+  animation-name: hero-bounce-right;
 }
 
-.bouncy.cd-intro-content p {
-  animation-name: cd-bounce-left;
+.bouncy.hero-intro-content p {
+  animation-name: hero-bounce-left;
 }
 
-.bouncy.cd-intro-content h1,
-.bouncy.cd-intro-content p {
+.bouncy.hero-intro-content h1,
+.bouncy.hero-intro-content p {
   animation-duration: 0.6s;
 }
 
-.bouncy.cd-intro-content .cd-btn {
-  animation-name: cd-bounce-rotate;
+.bouncy.hero-intro-content .hero-btn {
+  animation-name: hero-bounce-rotate;
   animation-duration: 0.5s;
 }
 
-.bouncy.cd-intro-content .cd-btn.main-action {
+.bouncy.hero-intro-content .hero-btn.main-action {
   animation-delay: 0.4s;
 }
 
@@ -182,18 +182,18 @@ TEXT BOUNCE EFFECT
 }
 
 .reveal-right.in-view {
-  animation: cd-bounce-right 0.6s forwards;
+  animation: hero-bounce-right 0.6s forwards;
 }
 
 .reveal-left.in-view {
-  animation: cd-bounce-left 0.6s forwards;
+  animation: hero-bounce-left 0.6s forwards;
 }
 
 .reveal-rotate.in-view {
-  animation: cd-bounce-rotate 0.5s forwards;
+  animation: hero-bounce-rotate 0.5s forwards;
 }
 
-@keyframes cd-bounce-right {
+@keyframes hero-bounce-right {
   0% {
     opacity: .2;
     transform: translateX(-200px);
@@ -208,7 +208,7 @@ TEXT BOUNCE EFFECT
   }
 }
 
-@keyframes cd-bounce-left {
+@keyframes hero-bounce-left {
   0% {
     opacity: .2;
     transform: translateX(200px);
@@ -223,7 +223,7 @@ TEXT BOUNCE EFFECT
   }
 }
 
-@keyframes cd-bounce-rotate {
+@keyframes hero-bounce-rotate {
   0% {
     opacity: .2;
     transform: perspective(800px) rotateX(-80deg);

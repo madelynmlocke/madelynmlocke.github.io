@@ -2,13 +2,13 @@
 Header style
 --------------------------------------------------------------*/
 
-.masthead {
+.site-header {
     /* background: rgba(255, 0, 212, 0.21); */
 
 }
 
 @media screen and (min-width: 50em) {
-    .masthead {
+    .site-header {
         display: flex;
         justify-content: space-between;
         align-items: center;
