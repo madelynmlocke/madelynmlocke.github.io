@@ -96,18 +96,12 @@ TEXT BOUNCE EFFECT
 .hero-intro-content {
   position: relative;
   margin: 80px 10%;
-  /* padding: 30px 10%; */
-  /* align-items: flex-start;
-  display: flex;
-  flex-direction: column; */
 
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   gap: 40px;
-  /* background-color: rgba(10, 10, 32, 0.801); */
-  /* border-radius: 20px; */
 }
 
 @media (max-width: 640px) {
@@ -150,10 +144,6 @@ TEXT BOUNCE EFFECT
 }
 
 .bouncy.hero-intro-content h1 {
-  animation-name: hero-bounce-right;
-}
-
-.bouncy.hero-intro-content h2 {
   animation-name: hero-bounce-right;
 }
 

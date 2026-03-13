@@ -104,10 +104,6 @@ Main Navigation Menu
 	display: block;
 }
 
-.main-navigation li {
-	position: relative;
-}
-
 .main-navigation .current-menu-item > a{
 	font-weight: 700;
 }
