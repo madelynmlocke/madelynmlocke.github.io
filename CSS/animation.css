@@ -104,6 +104,10 @@ TEXT BOUNCE EFFECT
   gap: 40px;
 }
 
+.hero-img {
+  margin: 0 auto;
+}
+
 @media (max-width: 640px) {
     .hero-intro-content {
         margin: 10px 6%;
@@ -114,7 +118,6 @@ TEXT BOUNCE EFFECT
 
   .hero-intro-content {
     flex-direction: column;
-    align-items: flex-start;
     gap: 20px;
   }
 
