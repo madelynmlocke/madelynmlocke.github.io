@@ -10,3 +10,4 @@ Style Import - This sheet pulls in all the components in order of appearance
 @import url('CSS/body.css');
 @import url('CSS/equalizer.css');
 @import url('CSS/glitch.css');
+@import url('CSS/form.css');

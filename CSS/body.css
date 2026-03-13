@@ -519,12 +519,6 @@ Footer Section
 Contact Gameboy Section
 --------------------------------------------------------------*/
 
-.contact-section {
-  padding: 90px 10%;
-  display: flex;
-  justify-content: center;
-}
-
 .contact-shell {
   width: min(100%, 600px);
   background: linear-gradient(180deg, rgba(255, 0, 153, 0.80) 0%, rgba(255, 0, 153, 0.80) 100%);
@@ -563,7 +557,6 @@ Contact Gameboy Section
   position: relative;
   z-index: 1;
   max-width: 720px;
-  margin: 0 auto 50px;
   text-align: center;
 }
 

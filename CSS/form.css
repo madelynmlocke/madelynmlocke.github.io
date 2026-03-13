@@ -1,0 +1,377 @@
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10%;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+
+.gameboy-shell {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 430px;
+  /* background: linear-gradient(180deg, #ff9adf 0%, #ff70cf 55%, #f54abb 100%); */
+  border: 6px solid #8a2a72;
+  border-radius: 28px 28px 80px 28px;
+  padding: 1.5rem 1.25rem .8rem;
+  box-shadow:
+    0 0 25px rgba(255, 105, 220, 0.35),
+    inset -6px -8px 0 rgba(138, 42, 114, 0.35),
+    inset 4px 4px 0 rgba(255, 220, 245, 0.45);
+  font-family: "Press Start 2P", monospace;
+}
+
+.power-light {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ff2ea6;
+  box-shadow: 0 0 12px #ff2ea6;
+  margin-bottom: 0.5rem;
+}
+
+.console-brand {
+  margin: 0 0 1rem;
+  font-size: 0.65rem;
+  letter-spacing: 1px;
+  color: #73245e;
+  text-transform: uppercase;
+}
+
+.gameboy-screen-wrap {
+  background: #b04f97;
+  border: 4px solid #7c2e67;
+  border-radius: 18px 18px 40px 18px;
+  padding: 1rem;
+  margin-bottom: 1.25rem;
+  box-shadow: inset 0 0 0 3px rgba(255, 219, 242, 0.15);
+}
+
+.screen-header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+}
+
+.battery-text {
+  font-size: 0.5rem;
+  color: #ffd8f3;
+  opacity: 0.9;
+}
+
+.gameboy-screen {
+  background:
+    linear-gradient(rgba(255,255,255,0.03), rgba(255,255,255,0.03)),
+    repeating-linear-gradient(
+      to bottom,
+      rgba(255,255,255,0.02) 0px,
+      rgba(255,255,255,0.02) 2px,
+      rgba(0,0,0,0.03) 2px,
+      rgba(0,0,0,0.03) 4px
+    ),
+    #ffd6f4;
+  border: 4px solid #6d2b5d;
+  border-radius: 12px;
+  padding: 1rem;
+  color: #5a1e49;
+  box-shadow: inset 0 0 18px rgba(255, 124, 211, 0.25);
+}
+
+.gameboy-screen h2 {
+  margin: 0 0 0.75rem;
+  font-size: 0.95rem;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.screen-subtitle {
+  margin: 0 0 1rem;
+  font-size: 0.5rem;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.gameboy-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.gameboy-form label {
+  font-size: 0.5rem;
+  line-height: 1.4;
+}
+
+.gameboy-form input,
+.gameboy-form textarea {
+  width: 100%;
+  border: 3px solid #8a2a72;
+  border-radius: 8px;
+  background: #fff3fb;
+  color: #5a1e49;
+  padding: 0.7rem 0.75rem;
+  font-family: "Press Start 2P", monospace;
+  font-size: 0.5rem;
+  line-height: 1.7;
+  resize: none;
+  box-sizing: border-box;
+  outline: none;
+  box-shadow: inset 0 0 0 2px rgba(255, 180, 229, 0.35);
+}
+
+.gameboy-form input::placeholder,
+.gameboy-form textarea::placeholder {
+  color: #b05d92;
+}
+
+.gameboy-form input:focus,
+.gameboy-form textarea:focus {
+  border-color: #ff2ea6;
+  box-shadow:
+    0 0 0 2px rgba(255, 46, 166, 0.18),
+    inset 0 0 0 2px rgba(255, 180, 229, 0.35);
+}
+
+.start-button {
+  margin: 0.85rem auto 0;
+  border: none;
+  border-radius: 999px;
+  padding: 0.85rem 1.3rem;
+  background: linear-gradient(180deg, #ff4fc3 0%, #d62a93 100%);
+  color: #fff;
+  font-family: "Press Start 2P", monospace;
+  font-size: 0.55rem;
+  cursor: pointer;
+  box-shadow:
+    0 4px 0 #8a2a72,
+    0 0 15px rgba(255, 79, 195, 0.35);
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.start-button:hover {
+  transform: translateY(-2px);
+}
+
+.start-button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 #8a2a72;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 0.5rem;
+}
+
+.dpad {
+  position: relative;
+  width: 82px;
+  height: 82px;
+}
+
+.dpad-vertical,
+.dpad-horizontal {
+  position: absolute;
+  background: #6d2b5d;
+  border-radius: 8px;
+  box-shadow: inset 2px 2px 0 rgba(255,255,255,0.12);
+}
+
+.dpad-vertical {
+  width: 26px;
+  height: 82px;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+.dpad-horizontal {
+  width: 82px;
+  height: 26px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.action-buttons {
+  display: flex;
+  gap: 1rem;
+  transform: rotate(-20deg);
+}
+
+.action-buttons button {
+  width: 52px;
+  height: 52px;
+  border: none;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #ff4fc3 0%, #c91c84 100%);
+  color: #fff;
+  font-family: "Press Start 2P", monospace;
+  font-size: 0.7rem;
+  box-shadow:
+    0 4px 0 #8a2a72,
+    inset 2px 2px 0 rgba(255,255,255,0.18);
+}
+
+.speaker {
+  display: flex;
+  gap: 0.35rem;
+  justify-content: flex-end;
+  margin-top: .5rem;
+  margin-bottom: 1.1rem;
+  padding-right: 0.35rem;
+  width: 98%;
+}
+
+.speaker span {
+  display: block;
+  width: 6px;
+  height: 26px;
+  border-radius: 999px;
+  background: rgba(109, 43, 93, 0.65);
+}
+
+@media (max-width: 480px) {
+  .gameboy-shell {
+    padding: 1rem 0.9rem 1.5rem;
+    border-radius: 22px 22px 54px 22px;
+  }
+
+  .controls {
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .action-buttons {
+    transform: none;
+  }
+
+  .gameboy-screen h2 {
+    font-size: 0.75rem;
+  }
+
+  .screen-subtitle,
+  .gameboy-form label,
+  .gameboy-form input,
+  .gameboy-form textarea,
+  .start-button,
+  .battery-text,
+  .console-brand {
+    font-size: 0.45rem;
+  }
+}
+
+.gameboy-screen {
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(rgba(255,255,255,0.03), rgba(255,255,255,0.03)),
+    repeating-linear-gradient(
+      to bottom,
+      rgba(255,255,255,0.02) 0px,
+      rgba(255,255,255,0.02) 2px,
+      rgba(0,0,0,0.03) 2px,
+      rgba(0,0,0,0.03) 4px
+    ),
+    #ffd6f4;
+  border: 4px solid #6d2b5d;
+  border-radius: 12px;
+  padding: 1rem;
+  color: #5a1e49;
+  box-shadow: inset 0 0 18px rgba(255, 124, 211, 0.25);
+}
+
+/* Actual content */
+.screen-inner {
+  position: relative;
+  z-index: 1;
+  transition: opacity 0.15s ease;
+}
+
+/* Black overlay */
+.gameboy-screen::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: black;
+  opacity: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Bright CRT line */
+.gameboy-screen::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  height: 2px;
+  transform: translate(-50%, -50%) scaleX(0);
+  transform-origin: center;
+  background:
+    linear-gradient(
+      to right,
+      transparent 0%,
+      rgba(255,255,255,0.95) 20%,
+      rgba(255,182,255,1) 50%,
+      rgba(255,255,255,0.95) 80%,
+      transparent 100%
+    );
+  box-shadow:
+    0 0 8px rgba(255,255,255,0.95),
+    0 0 18px rgba(255,120,220,0.85),
+    0 0 28px rgba(255,120,220,0.55);
+  opacity: 0;
+  z-index: 3;
+  pointer-events: none;
+}
+
+/* Triggered state */
+.gameboy-screen.tv-off .screen-inner {
+  opacity: 0;
+}
+
+.gameboy-screen.tv-off::before {
+  animation: crt-blackout 0.6s ease forwards;
+}
+
+.gameboy-screen.tv-off::after {
+  animation: crt-line-off 0.6s ease forwards;
+}
+
+@keyframes crt-blackout {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.15;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes crt-line-off {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scaleX(1) scaleY(18);
+  }
+  20% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scaleX(1) scaleY(10);
+  }
+  55% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scaleX(0.85) scaleY(2);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scaleX(0) scaleY(1);
+  }
+}

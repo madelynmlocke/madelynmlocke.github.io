@@ -33,8 +33,8 @@
       <ul id="primary-menu" class="nav-menu">
         <li class="menu-item current-menu-item"><a href="index.html">Home</a></li>
         <li class="menu-item"><a href="#projects">Projects</a></li>
-        <li class="menu-item"><a href="assets/tech-resume.pdf" download>Resume</a></li>
-        <li class="menu-item"><a href="contact.html">Contact</a></li>
+        <li class="menu-item"><a href="#contact" >Contact</a></li>
+        <li class="menu-item"><a href="assets/tech-resume.pdf" download>Resume <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg></a></li>
         </ul>
       </div>
     </nav>
@@ -95,7 +95,7 @@
     </div>
 
     <div class="about-panel about-text-panel">
-        <p>
+        <p class>
           I'm a full-stack developer focused on building responsive web applications and polished user interfaces.
           My experience includes JavaScript, C#, SQL, and ASP.NET Core MVC. I’ve worked on both solo and team-based projects, 
           building applications with authentication, database integration, and modern frontend design. I’m particularly interested 
@@ -295,6 +295,68 @@
   <script src="JS/equalizer.js"></script>
 </section>
 
+<section class="contact-section" id="contact">
+  <div class="contact-header reveal-right">
+    <p class="contact-tag">Transmission</p>
+    <h2>Contact Me</h2>
+    <p class="contact-subtext">
+      Want to connect, collaborate, or talk about an opportunity?
+    </p>
+  </div>
+  <!--contact form test-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <div class="gameboy-shell reveal-left">
+    <div class="power-light"></div>
+    <p class="console-brand">MADLYN BOY</p>
+
+    <div class="gameboy-screen-wrap">
+      <div class="screen-header">
+        <span class="battery-text">CONTACT MODE</span>
+      </div>
+
+<div class="gameboy-screen" id="gameboyScreen">
+  <div class="screen-inner">
+    <h2>Contact Me</h2>
+    <p class="screen-subtitle">Press start on your career, or whatever.</p>
+
+    <form class="gameboy-form" action="#" method="post">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Say hello..." required></textarea>
+
+      <button type="submit" class="start-button">START</button>
+    </form>
+  </div>
+</div>
+    </div>
+
+    <div class="controls">
+      <div class="dpad">
+        <span class="dpad-vertical"></span>
+        <span class="dpad-horizontal"></span>
+      </div>
+
+      <div class="action-buttons">
+        <button type="button" class="btn-a">A</button>
+        <button type="button" class="btn-b">B</button>
+      </div>
+    </div>
+
+    <div class="speaker">
+      <span></span><span></span><span></span><span></span>
+    </div>
+  </div>
+<!-- end contact form test-->
+</section>
+
 <footer class="site-footer reveal-left">
   <div class="footer-grid">
     <div class="footer-brand">
@@ -332,6 +394,7 @@
   <script type="text/javascript" src="JS/equalizer.js"></script>
   <script type="text/javascript" src="JS/glitch.js"></script>
   <script type="text/javascript" src="JS/animation.js"></script>
+  <script type="text/javascript" src="JS/form.js"></script>
 
 </body>
 </html>
