@@ -14,6 +14,7 @@
   width: 100%;
   max-width: 430px;
   /* background: linear-gradient(180deg, #ff9adf 0%, #ff70cf 55%, #f54abb 100%); */
+  backdrop-filter: blur(8px);
   border: 6px solid #8a2a72;
   border-radius: 28px 28px 80px 28px;
   padding: 1.5rem 1.25rem .8rem;
