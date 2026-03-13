@@ -161,7 +161,7 @@ Main Navigation Menu
 
 .main-navigation a:hover ~ .dropdown-toggle,
 .main-navigation a:focus ~ .dropdown-toggle {
-    color: hsl(fff, 0%, 20%);
+    color: hsl(0, 0%, 20%);
 }
 
 /* Small menu. */

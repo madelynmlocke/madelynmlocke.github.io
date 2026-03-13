@@ -3,11 +3,7 @@ Fixed Background Image
 --------------------------------------------------------------*/
 
 body {
-  width:100%;
-  min-width:400px;
-  min-height: 600px;
-  /*overflow: hidden; */
-  opacity: 1.0;
+  min-height: 100vh;
   background: linear-gradient(rgba(10,10,10,.6),rgba(0,0,0,.9)),
   repeating-linear-gradient(0, transparent, transparent 2px, black 3px, black 3px),
 		url('../IMG/retrobgm.jpg');
@@ -34,8 +30,6 @@ body {
 Body Styles
 --------------------------------------------------------------*/
 .content {
-  border: 10px;
-  border-color: hotpink;
   padding: 2em;
 }
 
@@ -64,13 +58,6 @@ Body Styles
 About Section
 --------------------------------------------------------------*/
 
-.about-section {
-  position: relative;
-  padding: 90px 10%;
-  padding-top: 10px;
-  color: #f7ecff;
-  overflow: hidden;
-}
 
 .about-grid {
   position: relative;
