@@ -31,8 +31,8 @@ const observer = new IntersectionObserver((entries) => {
     }
   });
 }, {
-  threshold: 0.4,
-  rootMargin: "0px 0px -35% 0px"
+  threshold: 0.2,
+  rootMargin: "0px 0px -30% 0px"
 });
 
 animatedItems.forEach((item) => observer.observe(item));
