@@ -21,12 +21,15 @@ The test plan covers core user journeys such as:
 - interacting with project links
 
 # 2. Project Information
-| Item	| Description |
-| Website |	https://madelynmlocke.github.io |
-| Application | Type |	Static Portfolio Website |
-| Hosting | GitHub Pages |
-| Technology | HTML, CSS, JavaScript |
-| Target Users | Recruiters, hiring managers, potential collaborators |
+
+| Item | Description |
+|------|-------------|
+| Project Name | Madelyn Locke Portfolio Website |
+| Website URL | https://madelynmlocke.github.io |
+| Application Type | Static Portfolio Website |
+| Hosting Platform | GitHub Pages |
+| Technology Stack | HTML, CSS, JavaScript |
+| Target Users | Recruiters, hiring managers, and potential collaborators |
 
 # 3. Testing Objectives
 
@@ -90,15 +93,14 @@ Testing is considered complete when:
 
 # 7. Test Strategy
 
-Testing will include:
-
-| Testing Type	| Purpose | 
-| Smoke Testing	| Verify basic site functionality | 
-| Functional Testing | 	Validate navigation and links | 
-| UI Testing | 	Confirm layout and visual elements | 
-| Responsive Testing | 	Verify mobile and tablet layouts | 
-| Accessibility Testing	| Basic keyboard and structural checks | 
-| Regression Testing | 	Verify fixes after defects | 
+| Testing Type | Purpose |
+|--------------|--------|
+| Smoke Testing | Verify basic site functionality after deployment |
+| Functional Testing | Validate navigation, links, and page behavior |
+| UI Testing | Confirm layout consistency and visual elements |
+| Responsive Testing | Verify layout across desktop, tablet, and mobile |
+| Accessibility Testing | Check keyboard navigation, alt text, and structural accessibility |
+| Regression Testing | Re-test previously working functionality after fixes or updates |
 
 # 8. High Level Test Scenarios
 
