@@ -122,6 +122,7 @@ Testing will include:
 
 10. Defect Severity Levels
 | Severity | Description | 
+|---------|---------------|
 | Critical | Core feature broken | 
 | High | Major functionality impaired | 
 | Medium | Minor functionality issue | 
@@ -153,6 +154,7 @@ Actual Result	Needs manual validation
 
 12. Risk Assessment
 | Risk | Impact | Mitigation | 
+|---------|---------------|------------|
 | Broken external links	| Recruiters unable to view work | Link validation | 
 | Missing pages	Poor UX	| Navigation testing | 
 | Mobile layout issues | Reduced usability	Responsive testing | 
