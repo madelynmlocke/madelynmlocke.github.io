@@ -1,4 +1,4 @@
-#QA Test Plan
+# QA Test Plan
 
 Project: Madelyn Locke Portfolio Website
 Author: Madelyn Locke
@@ -6,7 +6,7 @@ Date: March 2026
 Version: 1.0
 Test Environment: Production (GitHub Pages)
 
-1. Overview
+# 1. Overview
 
 This document defines the testing strategy, scope, and execution plan for the Madelyn Locke Portfolio Website.
 
@@ -20,7 +20,7 @@ The test plan covers core user journeys such as:
 - accessing contact options
 - interacting with project links
 
-2. Project Information
+# 2. Project Information
 | Item	| Description |
 | Website |	https://madelynmlocke.github.io |
 | Application | Type |	Static Portfolio Website |
@@ -28,7 +28,7 @@ The test plan covers core user journeys such as:
 | Technology | HTML, CSS, JavaScript |
 | Target Users | Recruiters, hiring managers, potential collaborators |
 
-3. Testing Objectives
+# 3. Testing Objectives
 
 The primary objectives of testing are to verify:
 
@@ -40,33 +40,40 @@ The primary objectives of testing are to verify:
 - accessibility basics are met
 -  no broken pages or assets exist
 
-4. Scope of Testing
-###In Scope
-| Area	| Description |
+# 4. Scope of Testing
+
+## In Scope
+
+| Area | Description |
+|-----|-------------|
 | Navigation | Header navigation and internal links |
-| Pages	| Home, Projects, Resume, Contact |
+| Pages | Home, Projects, Resume, Contact |
 | External Links | GitHub, LinkedIn, Live Demo links |
 | Content | Text, headings, images |
 | Layout | Responsive layout across devices |
 | Accessibility | Keyboard navigation and basic accessibility checks |
 | Cross Browser | Chrome, Firefox, Edge, Safari |
 
-###Out of Scope
+## Out of Scope
+
 | Area | Reason |
-| Backend API testing | Site is static | 
-| Security penetration testing | Outside portfolio scope | 
-| Performance benchmarking | Not critical for static site | 
-| SEO optimization | Not part of QA functional testing | 
+|-----|-------|
+| Backend API testing | Site is static |
+| Security penetration testing | Outside portfolio scope |
+| Performance benchmarking | Not critical for static site |
+| SEO optimization | Not part of QA functional testing |
 
-5. Test Environment
-| Component | Details | 
-| Environment | Production | 
-| URL | https://madelynmlocke.github.io | 
-| Browser | Chrome, Firefox, Edge, Safari | 
-| Devices | Desktop, Tablet, Mobile | 
-| Viewports | 375px, 768px, 1440px | 
+# 5. Test Environment
 
-6. Entry and Exit Criteria
+| Component | Details |
+|----------|--------|
+| Environment | Production |
+| URL | https://madelynmlocke.github.io |
+| Browser | Chrome, Firefox, Edge, Safari |
+| Devices | Desktop, Tablet, Mobile |
+| Viewports | 375px, 768px, 1440px |
+
+# 6. Entry and Exit Criteria
 Entry Criteria
 Testing begins when:
 - site deployment is complete
@@ -81,7 +88,7 @@ Testing is considered complete when:
 - navigation flows function correctly
 - responsive layout is acceptable across breakpoints
 
-7. Test Strategy
+# 7. Test Strategy
 
 Testing will include:
 
@@ -93,20 +100,22 @@ Testing will include:
 | Accessibility Testing	| Basic keyboard and structural checks | 
 | Regression Testing | 	Verify fixes after defects | 
 
-8. High Level Test Scenarios
-| ID | Scenario	| Priority | 
-| TS-01	| Home page loads successfully	| High | 
-| TS-02	| Navigation links work	| High | 
-| TS-03	| Projects page loads | High | 
-| TS-04	| Project GitHub links open correct repos	| Medium | 
-| TS-05	| Project demo links open | High | 
-| TS-06	| Resume link works	| High | 
-| TS-07	| Contact page loads | High | 
-| TS-08	| Footer links function	| Medium | 
-| TS-09	| Layout adapts to mobile	| High | 
-| TS-10	| Images load correctly	| Medium | 
+# 8. High Level Test Scenarios
 
-9. Detailed Test Cases
+| ID | Scenario | Priority |
+|----|---------|---------|
+| TS-01 | Home page loads successfully | High |
+| TS-02 | Navigation links work | High |
+| TS-03 | Projects page loads | High |
+| TS-04 | Project GitHub links open correct repos | Medium |
+| TS-05 | Project demo links open | High |
+| TS-06 | Resume link works | High |
+| TS-07 | Contact page loads | High |
+| TS-08 | Footer links function | Medium |
+| TS-09 | Layout adapts to mobile | High |
+| TS-10 | Images load correctly | Medium |
+
+# 9. Detailed Test Cases
 
 | Test Case ID | Priority | Description | Steps | Expected Result | Status |
 |---------------|----------|-------------|-------|-----------------|--------|
@@ -120,53 +129,38 @@ Testing will include:
 | TC-008 | High | Verify layout adapts on mobile | Resize browser to mobile width | Content stacks correctly | Pass |
 | TC-009 | Medium | Verify images load correctly | Inspect project cards | Images display correctly | Pass |
 
-10. Defect Severity Levels
-| Severity | Description | 
-|---------|---------------|
-| Critical | Core feature broken | 
-| High | Major functionality impaired | 
-| Medium | Minor functionality issue | 
-| Low | Cosmetic issue | 
+# 10. Defect Severity Levels
 
-11. Bug Report Log
-BUG-001 Contact Page Returns 404
-Field	Description
-Bug ID	BUG-001
-Severity	High
-Priority	High
-Status	Open
-Environment	Production
-Description	Contact navigation route returns 404
-Steps to Reproduce	Click Contact in navigation
-Expected Result	Contact page loads
-Actual Result	Page not found
-Possible Cause	Missing file or incorrect path
-BUG-002 Resume Link Needs Verification
-Field	Description
-Bug ID	BUG-002
-Severity	Medium
-Priority	Medium
-Status	Investigating
-Description	Resume link should be verified across browsers
-Steps to Reproduce	Click Resume link
-Expected Result	Resume opens
-Actual Result	Needs manual validation
+| Severity | Description |
+|---------|-------------|
+| Critical | Core feature broken |
+| High | Major functionality impaired |
+| Medium | Minor functionality issue |
+| Low | Cosmetic issue |
 
-12. Risk Assessment
-| Risk | Impact | Mitigation | 
-|---------|---------------|------------|
-| Broken external links	| Recruiters unable to view work | Link validation | 
-| Missing pages	Poor UX	| Navigation testing | 
-| Mobile layout issues | Reduced usability	Responsive testing | 
+# 11. Bug Report Log
 
-13. Test Deliverables
+| Bug ID | Severity | Priority | Status | Environment | Description | Steps to Reproduce | Expected Result | Actual Result | Possible Cause |
+|-------|---------|---------|--------|-------------|-------------|-------------------|----------------|--------------|---------------|
+| BUG-001 | High | High | Open | Production | Contact navigation route returns 404 | Click Contact in navigation | Contact page loads | Page not found | Missing file or incorrect path |
+| BUG-002 | Medium | Medium | Investigating | Production | Resume link should be verified across browsers | Click Resume link | Resume opens | Needs manual validation | Possible file access or browser compatibility issue |
+
+# 12. Risk Assessment
+
+| Risk | Impact | Mitigation |
+|-----|--------|-----------|
+| Broken external links | Recruiters unable to view work | Link validation |
+| Missing pages | Poor user experience | Navigation testing |
+| Mobile layout issues | Reduced usability | Responsive testing |
+
+# 13. Test Deliverables
 
 - QA Test Plan Document
 - Test Case Documentation
 - Bug Report Log
 - Test Execution Results
 
-14. Summary
+# 14. Summary
 
 This QA test plan ensures the portfolio website is reliable, accessible, and functional for users viewing the site. Testing focuses on core user journeys including navigation, project viewing, and resume access.
 
