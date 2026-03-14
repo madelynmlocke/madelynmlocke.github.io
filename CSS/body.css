@@ -28,28 +28,10 @@ body {
 /*--------------------------------------------------------------
 Body Styles
 --------------------------------------------------------------*/
-.content {
-  padding: 2em;
-}
 
-.gameboy {
-  position: fixed;
-  top: 60%;
-  left: 75%;
-  width: 250px;
-  height: 250px;
-  opacity: 70%;
-  transition: width 1s, height 1s;
-}
-
-.gameboy:hover {
-  width: 300px;
-  height: 300px;
-}
-
-@media screen and (max-width: 50em) {
-    .gameboy {
-        display: none;
+@media screen and (min-width:800px) {
+    .content {
+      padding: 2em;
     }
 }
 
